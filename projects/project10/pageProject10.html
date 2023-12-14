@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/CountriesApi.css">
+    <script src="script/CountriesApi.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <form id="input">
+            <input type="text" id="city" placeholder="הכנס שם העיר">
+            <input type="submit" value="לתחזית מזג האוויר">
+        </form>
+        <div id="weatherContainer">
+            <marquee id="cityName">Patna</marquee>
+            <span id="temp">33°C</span>
+            <span id="main">Cloudy</span>
+            <marquee id="discription">few clouds</marquee>
+            <img id="image" src="https://openweathermap.org/img/wn/02n@2x.png">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pageProject2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+
+            --fm: 'Heebo';
+
+        }
+
+        .formpro {
+            padding-top: 100px;
+            margin-top: 150px;
+            grid-template-columns: repeat(4, 1fr);
+            width: 390px !important;
+            background: #1A1A1AD4 0% 0% no-repeat padding-box;
+            grid-column: 5/6;
+            height: 400px;
+        }
+
+        form,
+        .aboveform {
+
+            grid-column: 5/6;
+            width: 100%;
+            direction: rtl;
+            margin-left: -40px;
+            /* margin-top: 30px; */
+            margin-bottom: 30px;
+
+        }
+
+        .field {
+
+            color: white;
+            font-family: var(--fm);
+            font-size: var(--fm);
+        }
+
+        h2 {
+
+            font-family: var(--fm);
+            font-size: 28px;
+            color: white;
+        }
+
+        p {
+            color: white;
+            font-family: var(--fm);
+            font-size: 15px;
+        }
+
+
+        input {
+
+            height: 35px;
+            border-radius: 2px;
+            border-bottom: 3px solid #D31C75;
+            width: 300px !important;
+        }
+
+        .row input {
+            margin-top: 10px;
+            width: 110px;
+            height: 35px;
+            border-radius: 20px;
+            border: 1px solid black;
+            background-color: black;
+            color: navy;
+            font-family: var(--fm);
+
+
+        }
+
+        textarea {
+            border-radius: 2px;
+            border-bottom: 3px solid #D31C75;
+
+        }
+
+        .background {
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            background-image: url(images/Path.png);
+            grid-template-rows: repeat(3, 1fr);
+            background-repeat: no-repeat;
+
+        }
+
+        input[type="submit"] {
+
+            background-color: #D31C75;
+            font-size: 22px;
+            font-family: var(--fm);
+            color: white;
+            width: 100px !important;
+            height: 40px;
+            border-radius: 0 !important;
+            border: 1px solid #D31C75;
+        }
+
+        @media (max-width: 500px) {
+
+            .background {
+
+                width: 100vw;
+                padding-top: 45px;
+
+            }
+
+            .formpro {
+                padding-top: 100px;
+                margin-top: 150px;
+                grid-template-columns: repeat(4, 1fr);
+                width: 100vw;
+                background: #1A1A1AD4 0% 0% no-repeat padding-box;
+                grid-column: 5/6;
+                height: 400px;
+                margin: 0 !important;
+
+            }
+
+            form,
+            .aboveform {
+                margin-top: 0;
+                grid-column: 5/6;
+                direction: rtl;
+                margin-right: 205px !important;
+                margin-bottom: 30px;
+                width: 390px;
+                margin-left: -45px !important;
+
+            }
+        }
+
+        @media (min-width: 550px) and (max-width: 950px) {
+
+            .background {
+
+                width: 100vw;
+            }
+
+            .formpro {
+                padding-top: 100px;
+                margin-top: 150px;
+                grid-template-columns: repeat(4, 1fr);
+                width: 100vw;
+                background: #1A1A1AD4 0% 0% no-repeat padding-box;
+                grid-column: 5/6;
+                height: 400px;
+
+            }
+
+            form,
+            .aboveform {
+
+                grid-column: 5/6;
+                direction: rtl;
+                margin-bottom: 30px;
+                padding-left: 15px;
+                margin-left: -60px !important;
+
+            }
+
+            .background {
+                display: grid;
+                width: 100vw;
+                background-image: url(images/Path.png);
+                background-repeat: no-repeat !important;
+                grid-template-rows: repeat(3, 1fr);
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="background">
+        <div class="formpro">
+            <h2 class="aboveform">תן לנו להוביל אותך קדימה</h2>
+            <p class="aboveform" style="margin-top: 0; margin-bottom: 20px; font-size: 15px;">למידע נוסף והתקשרות,
+                מלאו
+                פרטיכם בטופס הבא:
+            </p>
+            <form style="margin-top: 0;">
+                <div class="field">
+                    <label for="name">שם מלא</label><br>
+                    <input type="text" id="name" style="width: 450px;" required />
+                </div>
+
+                <div class="field">
+                    <label for="email_input">דוא״ל</label><br>
+                    <input type="email" id="email_input" style="width: 450px;" required />
+                </div>
+                <div class="row">
+                    <input type="submit" value="שליחה">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

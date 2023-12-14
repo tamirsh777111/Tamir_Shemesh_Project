@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+
+.con {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 3px #00000029;
+    width: 100vw;
+    height: 80px;
+    background-color: white;
+    font-family: $baseFont;
+    border-top: 3px $secondColor;
+    border-top: 3px solid $secondColor;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.onlynavmobile {
+
+    display: none !important;
+}
+
+.dropdown {
+    width: 100px !important;
+    text-align: center !important;
+
+}
+
+
+.dropdown-menu {
+    width: 100% !important;
+    border: none !important;
+    text-align: center !important;
+}
+
+
+.dropdown-item:hover {
+
+    background-color: $secondColor !important;
+}
+
+.dropdown-item {
+    text-align: center !important;
+    direction: rtl;
+    border: none !important;
+}
+
+.navbar {
+
+    font-size: 18px;
+    margin-right: 230px;
+    direction: rtl;
+    font-family: $baseFont;
+}
+
+.nav-link:hover,
+.dropdown-menu:hover {
+
+    color: $secondColor !important;
+}
+
+header nav {
+    margin-left: 500px;
+
+}
+
+img[alt="logo"] {
+    margin-left: -280px;
+    margin-right: 530px;
+    width: 250px;
+}
+
+@include mobile {
+
+
+
+    img[alt="site logo"] {
+        width: 150px;
+        z-index: 1;
+    }
+
+    .onlynavmobile {
+
+        display: block !important;
+        margin: 0 auto;
+        z-index: 2;
+        background-color: white !important;
+        height: 35px;
+        margin-top: 10px;
+    }
+
+    .dropdownbgcolor {
+
+        background-color: white !important;
+    }
+
+    .onlynavdesktop {
+
+        display: none !important;
+    }
+
+
+
+}
+
+
+
+@include tablet {
+
+
+
+    img[alt="site logo"] {
+        width: 150px;
+        z-index: 1;
+    }
+
+    .onlynavmobile {
+
+        display: block !important;
+        margin: 0 auto;
+        z-index: 2;
+        background-color: white !important;
+        height: 35px;
+        margin-top: 10px;
+    }
+
+    .dropdownbgcolor {
+
+        background-color: white !important;
+    }
+
+    .onlynavdesktop {
+
+        display: none !important;
+    }
+
+
+
+}
+
+
+
+nav {
+    height: 80px;
+}
+
+nav ul li a {
+
+    display: block;
+    width: 100px;
+    color: $mainColor;
+    text-decoration: none;
+    font-family: $baseFont;
+    text-align: center;
+    line-height: 2;
+    background-color: white;
+    font-size: $textSize;
+}
+
+nav ul li a:hover {
+
+    color: $secondColor;
+    font-weight: bold;
+    background-color: white;
+
+}
+
+nav ul li ul li {
+    clear: both;
+
+
+}
+
+nav ul li ul {
+
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+
+
+
+
+// nav {
+
+//     width: 500px;
+//     background-color: chocolate;
+//     height: 35px;
+//     margin: 0 auto;
+// }
+
+// nav ul {
+
+//     list-style-type: none;
+// }
+
+
+// nav ul li {
+//     float: left;
+
+// }
+
+// nav ul li a {
+
+//     display: block;
+//     width: 100px;
+//     color: green;
+//     text-decoration: none;
+//     font-size: 14pt;
+//     font-family: Arial, Helvetica, sans-serif;
+//     text-align: center;
+//     line-height: 2;
+//     background-color: black;
+//     border: 1px solid white;
+// }
+
+// nav ul li a:hover {
+//     background-color: royalblue;
+//     color: black;
+// }
+
+// nav ul li ul li {
+//     clear: both;
+
+
+// }
+
+// nav ul li ul {
+
+//     display: none;
+// }
+
+// nav ul li:hover ul {
+//     display: block;
+// }
+
+/*# sourceMappingURL=main.css.map */

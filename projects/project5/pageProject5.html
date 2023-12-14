@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pageProject5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+
+            --fm: 'Assistant';
+
+        }
+
+        .aboveform1 {
+            background: #8E097C;
+            margin-top: -28px;
+            height: 814px;
+            text-align: center;
+            direction: rtl;
+
+        }
+
+
+
+        .field {
+
+            color: white;
+            font-family: var(--fm);
+            font-size: var(--fm);
+        }
+
+        h2 {
+
+            font-family: var(--fm);
+            font-size: 35px;
+            color: white;
+            padding-top: 70px;
+        }
+
+        p {
+            color: white;
+            font-family: var(--fm);
+            font-size: 15px;
+
+        }
+
+
+        input {
+
+            height: 35px;
+            border-radius: 2px;
+            border-bottom: 4px solid #0EE1DA;
+            width: 500px !important;
+            color: #0EE1DA;
+            height: 60px;
+        }
+
+        .row input {
+            margin-top: 10px;
+            border-radius: 20px;
+            border: 1px solid #0EE1DA;
+            background-color: #0EE1DA;
+            color: #011560 !important;
+            font-family: var(--fm);
+
+
+        }
+
+        textarea {
+            border-radius: 2px;
+            border-bottom: 3px solid #0EE1DA;
+            height: 172px;
+            width: 500px;
+
+
+        }
+
+        .background {
+            width: 1920px;
+            height: 100%;
+            background-color: #E5EEFF;
+            padding-bottom: 200px;
+        }
+
+        img {
+
+            width: 280px;
+        }
+
+        .background1 {
+            margin: auto;
+            padding-top: 190px;
+            text-align: center;
+            width: 1180px !important;
+            display: grid;
+            gap: 20px 0;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+
+                "image1 image2 h1temp"
+                "image3 image4 h1temp"
+            ;
+        }
+
+        .background4 {
+
+            margin: auto;
+            padding-top: 20px;
+            gap: 20px;
+            width: 1180px !important;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+
+                "background2 images1 images2"
+                "background2 images1 images2"
+                "background2 images1 images2"
+            ;
+        }
+
+
+
+
+        .images1 {
+            grid-area: images1;
+
+
+        }
+
+        .images2 {
+            grid-area: images2;
+
+        }
+
+
+
+
+        .text h1 {
+            color: #0EE1DA;
+            font-family: var(--fm);
+            font-size: 61px;
+
+        }
+
+        .text p {
+
+            color: #F9F9F9;
+            font-family: var(--fm);
+            font-size: 20px;
+            margin-top: -20px;
+        }
+
+        .text {
+            width: 580px;
+            grid-area: h1temp;
+            background-color: #020253;
+            padding-top: 140px;
+        }
+
+        .background1 img[alt=image1] {
+            grid-area: image1;
+
+
+        }
+
+
+        .background1 img[alt=image2] {
+            grid-area: image2;
+
+        }
+
+
+        .background1 img[alt=image3] {
+            grid-area: image3;
+
+        }
+
+        .background1 img[alt=image4] {
+            grid-area: image4;
+
+        }
+
+        .background2 {
+            grid-area: background2;
+            width: 580px;
+
+
+        }
+
+        .background3 {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        label[for="name"] {
+            padding-left: 450px;
+            color: #0EE1DA;
+        }
+
+        label[for="email_input"] {
+            padding-left: 470px;
+            color: #0EE1DA;
+
+        }
+
+        label[for="subject"] {
+            padding-left: 425px;
+            color: #0EE1DA;
+            font-weight: bold !important;
+
+        }
+
+
+
+        input[type="submit"] {
+
+            font-size: 22px;
+            font-family: var(--fm);
+            color: white;
+            width: 500px !important;
+            height: 60px;
+            border-radius: 0 !important;
+            font-weight: 900;
+        }
+
+        @media (max-width: 500px) {
+
+            .images1,
+            .images2 {
+
+                width: 400px !important;
+            }
+
+            label[for="name"] {
+                padding-left: 0 !important;
+                color: #0EE1DA;
+            }
+
+            label[for="email_input"] {
+                padding-left: 0 !important;
+                color: #0EE1DA;
+
+            }
+
+            label[for="subject"] {
+                padding-left: 0 !important;
+                color: #0EE1DA;
+                font-weight: bold !important;
+
+            }
+
+
+            input,
+            textarea,
+            input[type="submit"] {
+
+                width: 350px !important;
+
+            }
+
+            .aboveform1 {
+                background: #8E097C;
+                margin-top: -28px;
+                text-align: center;
+                direction: rtl;
+                width: 400px !important;
+                display: block !important;
+
+            }
+
+            .background {
+                display: block !important;
+                width: 400px !important;
+                margin-top: -100px;
+                height: 100% !important;
+                margin-right: -3000px !important;
+            }
+
+
+            .background1 img[alt=image1] {
+                margin-top: 10px;
+
+            }
+
+            img {
+                width: 190px;
+            }
+
+            .background1 {
+                margin: auto;
+                padding-top: 190px;
+                text-align: center;
+                width: 400px !important;
+                display: block;
+
+            }
+
+            .background2 {
+                display: block;
+                width: 400px !important;
+            }
+
+            .background4 {
+                display: block !important;
+                width: 400px !important;
+            }
+
+            .text {
+                width: 400px;
+                background-color: #020253;
+                margin-top: 0;
+                padding-top: 10px;
+                height: 200px;
+                display: block;
+                padding-bottom: 20px;
+
+            }
+
+            .images1 img,
+            .images2 img {
+                width: 130px;
+            }
+
+
+            .background3 {
+                margin-top: 0px;
+                display: block;
+                text-align: center;
+
+            }
+        }
+
+        @media (min-width: 550px) and (max-width: 950px) {
+
+            .images1,
+            .images2 {
+
+                width: 800px !important;
+            }
+
+            label[for="name"] {
+                padding-left: 0 !important;
+                color: #0EE1DA;
+            }
+
+            label[for="email_input"] {
+                padding-left: 0 !important;
+                color: #0EE1DA;
+
+            }
+
+            label[for="subject"] {
+                padding-left: 0 !important;
+                color: #0EE1DA;
+                font-weight: bold !important;
+
+            }
+
+
+            input,
+            textarea,
+            input[type="submit"] {
+
+                width: 350px !important;
+
+            }
+
+            .aboveform1 {
+                background: #8E097C;
+                margin-top: -28px;
+                text-align: center;
+                direction: rtl;
+                width: 800px !important;
+                display: block !important;
+
+            }
+
+            .background {
+                display: block !important;
+                width: 800px !important;
+                margin-top: -100px;
+                height: 100% !important;
+                /* margin-right: -3000px !important; */
+            }
+
+
+            .background1 img[alt=image1] {
+                margin-top: 10px;
+
+            }
+
+            img {
+                width: 190px;
+            }
+
+            .background1 {
+                margin: auto;
+                padding-top: 190px;
+                text-align: center;
+                width: 800px !important;
+                display: block;
+
+            }
+
+            .background2 {
+                display: block;
+                width: 800px !important;
+            }
+
+            .background4 {
+                display: block !important;
+                width: 800px !important;
+            }
+
+            .text {
+                width: 800px;
+                background-color: #020253;
+                margin-top: 0;
+                padding-top: 10px;
+                height: 200px;
+                display: block;
+                padding-bottom: 20px;
+
+            }
+
+            .images1 img,
+            .images2 img {
+                width: 260px;
+            }
+
+
+            .background3 {
+                margin-top: 0px;
+                display: block;
+                text-align: center;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="background">
+
+        <div class="background1">
+            <div class="text">
+                <h1>לגלות את העולם</h1>
+                <p>הינכם מוזמנים לגלות את עולמנו</p>
+            </div>
+            <img src="images/Rectangle 515.png" alt="image1">
+            <img src="images/Rectangle 514.png" alt="image2">
+            <img src="images/Rectangle 506.png" alt="image3">
+            <img src="images/Rectangle 516.png" alt="image4">
+        </div>
+        <div class="background3">
+            <img src="images/11.png" alt="image11">
+            <img src="images/12.png" alt="image12">
+            <img src="images/13.png" alt="image13">
+            <img src="images/14.png" alt="image14">
+        </div>
+
+        <div class="background4">
+            <div class="background2">
+                <section class="aboveform1">
+                    <h2 class="aboveform"> ספרו לנו על החוויה שלכם</h2>
+                    <p class="aboveform" style="margin-top: 0; margin-bottom: 20px; font-size: 20px;">תן לנו להפתיע
+                        אותך! מלא פרטיך בטופס הבא:</p>
+                    <form style="margin-top: 0;">
+                        <div class="field">
+                            <label for="name">שם מלא</label><br>
+                            <input type="text" id="name" style="width: 450px;" required /><br><br>
+                            <label for="email_input">דוא״ל</label><br>
+                            <input type="email" id="email_input" style="width: 450px;" required /><br><br>
+                            <label for="subject">החוויה שלכם</label><br>
+                            <textarea id="subject" required></textarea>
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="שליחה">
+                        </div>
+                    </form>
+            </div>
+            </section>
+
+            <div class="images1">
+                <img src="images/15.png" alt="image15">
+                <img src="images/16.png" alt="image16" style="margin-top: 20px">
+                <img src="images/17.png" alt="image17" style="margin-top: 20px">
+            </div>
+
+            <div class="images2">
+                <img src="images/18.png" alt="image18">
+                <img src="images/19.png" alt="image19" style="margin-top: 20px">
+                <img src="images/20.png" alt="image20" style="margin-top: 20px">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

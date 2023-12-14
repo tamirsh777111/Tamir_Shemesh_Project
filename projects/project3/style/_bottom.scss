@@ -1,0 +1,216 @@
+footer {
+    margin-top: 1300px;
+    height: 900px;
+    background-color: $mainColor;
+    background-attachment: fixed;
+}
+
+@include mobile {
+    footer {
+        background-image: url(images/footermob.png) !important;
+        background-color: #3A3A3A !important;
+        margin-top: 210vh !important;
+        background-attachment: scroll;
+        height: 500px;
+        margin-top: 1800px !important;
+    }
+
+    form,
+    .aboveform,
+    .row {
+        padding-top: 10px;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        direction: rtl;
+        margin: auto !important;
+        text-align: center;
+    }
+
+    input[type="submit"] {
+
+
+        margin: auto;
+    }
+
+    input,
+    textarea {
+        width: 200px !important;
+        border-radius: 2px;
+        border-bottom: 3px solid $secondColor;
+    }
+
+}
+
+.envelop {
+    color: white;
+    font-size: 200px;
+}
+
+
+form,
+.aboveform {
+    width: 100%;
+    float: right;
+    direction: rtl;
+    margin-right: 305px;
+    margin-top: 150px;
+}
+
+.field {
+
+    color: white;
+    font-family: $baseFont;
+    font-size: $textSize;
+}
+
+footer h2 {
+
+    color: white;
+    font-size: $headingFontSize;
+    font-family: $baseFont;
+}
+
+
+footer p {
+
+    font-size: $textSize;
+    color: white;
+}
+
+input {
+
+    height: 35px;
+    border-radius: 2px;
+    border-bottom: 3px solid $secondColor;
+}
+
+.row input {
+    margin-top: 10px;
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid $secondColor;
+    background-color: $secondColor;
+    color: $mainColor;
+    font-family: $baseFont;
+    font-size: $textSize;
+    font-weight: $meduimFont;
+
+}
+
+textarea {
+    border-radius: 2px;
+    border-bottom: 3px solid $secondColor;
+
+}
+
+.backtotop {
+
+    position: fixed;
+    width: 50px;
+    left: 1700px;
+    bottom: 70px;
+
+}
+
+.footercontact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1AE0EC;
+    height: 200px;
+    text-align: center;
+    font-family: $baseFont;
+}
+
+.footercontact img {
+
+    width: 50px;
+}
+
+.footercontact img[alt="phone icon"] {
+    width: 41px;
+
+}
+
+.footercontact img[alt="loaction icon"],
+.footercontact img[alt="facebook icon"] {
+
+    width: 35px;
+}
+
+
+@include tablet {
+
+    footer {
+        background-image: url(images/footermob.png) !important;
+        background-color: #3A3A3A !important;
+        background-attachment: scroll;
+        height: 500px;
+        margin-top: 0 !important;
+    }
+
+    form,
+    .aboveform,
+    .row {
+        padding-top: 10px;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        direction: rtl;
+        margin: auto !important;
+        text-align: center;
+    }
+
+    input[type="submit"] {
+
+
+        margin: auto;
+    }
+
+    .footercontact {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding-top: 30px;
+        display: block;
+        background-color: #1AE0EC;
+        height: 500px;
+        text-align: center;
+    }
+
+    .footercontact div {
+
+        width: 250px !important;
+    }
+
+}
+
+@include mobile {
+
+    footer {
+
+        margin-top: 4950px !important;
+    }
+
+    .footercontact {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding-top: 30px;
+        display: block;
+        background-color: #1AE0EC;
+        height: 500px;
+        text-align: center;
+    }
+
+    .footercontact div {
+
+        width: 200px !important;
+    }
+}

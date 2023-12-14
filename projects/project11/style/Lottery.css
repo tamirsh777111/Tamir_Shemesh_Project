@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+
+body {
+
+    /* background-image: url(images/lottery.jpg) linear-gradient(rgba(0, 0, 0, 0.5)); */
+    background-image: url(lottery.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+
+}
+
+@media (min-width: 810px) and (max-width: 1080px) {
+
+    button {
+        width: 300px !important;
+        font-size: 20px !important;
+    }
+
+    #numbers {
+        font-size: 20px !important;
+        width: 300px !important;
+
+
+    }
+}
+
+
+
+@media (max-width: 430px) {
+
+    button {
+        width: 300px !important;
+        font-size: 20px !important;
+    }
+
+    #numbers {
+        font-size: 20px !important;
+        width: 300px !important;
+
+
+    }
+
+}
+
+h1 {
+    font-size: 45px !important;
+    color: rgb(0, 55, 218);
+    font-weight: 700;
+
+}
+
+#numbers {
+    font-size: 38px;
+    color: darkmagenta !important;
+    background-color: bisque;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.container {
+
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+}
+
+.submit {
+    margin-bottom: 10px;
+}
+
+
+button {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background: blue;
+    border: solid 1px #ddd;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background: #999;
+    color: #fff;
+}

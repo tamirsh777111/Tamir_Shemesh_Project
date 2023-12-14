@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pageProject4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+
+            --fm: 'Assistant';
+
+        }
+
+        h1 {
+            font-size: 86px;
+            color: #D3E10E;
+        }
+
+        p {
+
+            color: white;
+            font-size: 20px;
+        }
+
+
+        .formpro4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 250px;
+        }
+
+        .background {
+            width: 100vw;
+            height: 593px !important;
+            font-family: var(--fm);
+            background-image: url(images/Path15.png);
+            text-align: center;
+            padding-top: 150px;
+        }
+
+
+        form {
+            margin-top: -350px !important;
+            direction: rtl;
+            display: inline;
+            margin: 0 auto;
+            font-family: var(--fm);
+
+        }
+
+        label {
+            color: #011560;
+            font-size: 16px;
+
+        }
+
+        .field,
+        .row {
+            display: inline;
+        }
+
+        input[type="submit"] {
+            width: 200px !important;
+            background-color: #D3E10E !important;
+            font-family: var(--fm);
+            font-size: 16px;
+            color: #011560;
+            height: 50px;
+        }
+
+        input {
+            border: 3px solid white;
+            width: 400px;
+            background-color: #F6F6F6 !important;
+            font-family: var(--fm);
+            border-bottom: 4px solid #D3E10E !important;
+            height: 25px;
+
+        }
+
+        .form-inline {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+
+        .form-inline label {
+            margin: 5px 10px 5px 0;
+        }
+
+        .form-inline input {
+            vertical-align: middle;
+            margin: 5px 10px 5px 0;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        @media (max-width: 500px) {
+            .background {
+                width: 400px;
+                height: 190px !important;
+                font-family: var(--fm);
+                background-image: url(images/Path15.png);
+                text-align: center;
+                padding-top: 150px;
+                background-size: cover;
+                background-attachment: scroll;
+                background-position: top center;
+            }
+
+            h1 {
+
+                font-size: 24px;
+            }
+
+            form {
+                margin-top: -190px !important;
+                direction: rtl;
+                display: flex;
+                font-family: var(--fm);
+                justify-content: center;
+                align-items: center;
+                padding-right: 10px;
+            }
+
+            input {
+
+                width: 200px !important;
+
+            }
+
+            input[type="submit"] {
+                width: 100px !important;
+            }
+
+            .form-inline {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-right: 70px;
+            }
+        }
+
+        @media (min-width: 550px) and (max-width: 950px) {
+            .background {
+                width: 800px;
+                height: 190px !important;
+                font-family: var(--fm);
+                background-image: url(images/Path15.png);
+                text-align: center;
+                padding-top: 150px;
+                background-size: cover;
+                background-attachment: scroll;
+                background-position: top center;
+            }
+
+            h1 {
+
+                font-size: 24px;
+            }
+
+            form {
+                margin-top: -190px !important;
+                direction: rtl;
+                display: flex;
+                font-family: var(--fm);
+                justify-content: center;
+                align-items: center;
+                padding-right: 210px;
+            }
+
+            input {
+
+                width: 200px !important;
+
+            }
+
+            input[type="submit"] {
+                width: 100px !important;
+            }
+
+            .form-inline {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-right: 70px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="background">
+        <h1>תן לנו להוביל אותך קדימה</h1>
+        <p>:לקבלת מידע נוסף השאירו פרטיכם בטופס הבא</p>
+    </div>
+
+    <div class="formpro4">
+        <form style="margin-top: 0;" class="form-inline">
+            <div class="field">
+                <label for="name">שם מלא</label><br>
+                <input type="text" id="name" required>
+            </div>
+            <br>
+            <div class="field">
+                <label for="email_input">דוא״ל</label><br>
+                <input type="email" id="email_input" required>
+            </div>
+            <div class="row"><br>
+                <input type="submit" value="שליחה">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
