@@ -296,6 +296,10 @@ div a button:hover {
   border: 1px solid #1AE0EC;
 }
 
+body {
+  background-color: white !important;
+}
+
 .box1,
 .box2,
 .box3,
